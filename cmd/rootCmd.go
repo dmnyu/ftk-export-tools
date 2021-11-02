@@ -7,5 +7,10 @@ func Execute() error {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "cobra",
+	Use: "cobra",
 }
+
+/* commands
+update ER dir names with CUID
+check that there is a CUID dir for every entry in a Work Order
+*/
