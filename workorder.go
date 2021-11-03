@@ -44,3 +44,11 @@ func ParseWorkOrder(path string) (WorkOrder, error) {
 	}
 	return workOrder, nil
 }
+
+func (wo WorkOrder) GetCUIDs() []string {
+	cuids := []string{}
+	for _, entry := range wo {
+		cuids = append(cuids, entry.ComponentID)
+	}
+	return cuids
+}
